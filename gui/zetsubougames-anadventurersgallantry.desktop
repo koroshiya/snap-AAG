@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=An Adventurer's Gallantry
+GenericName=An Adventurer's Gallantry
+Comment=Disgraced knight-in-training Oren gets a second chance at life as an adventurer in this fantasy visual novel
+Exec=zetsubougames-anadventurersgallantry
+Icon=${SNAP}/meta/gui/zetsubougames-anadventurersgallantry.png
+Terminal=false
+Type=Application
+Keywords=game;an;adventurers;gallantry;
+Categories=Game

@@ -1,0 +1,32 @@
+name: zetsubougames-anadventurersgallantry
+base: core20
+version: '1.0.0'
+summary: Fantasy visual novel in which a disgraced knight gets a second chance at life
+description: |
+  Disgraced knight-in-training Oren gets a second chance at life as an adventurer in this fantasy visual novel
+website: https://zetsubou.games/
+license: Proprietary
+
+grade: stable
+confinement: strict
+
+parts:
+  app:
+    source: https://cdn.zetsubou.games/Flatpak/AnAdventurersGallantry/builds/v1.0.0-all.tar.bz2
+    plugin: dump
+
+apps:
+  zetsubougames-anadventurersgallantry:
+    command: AAG.sh
+    extensions: [gnome-3-38]
+    plugs:
+      - x11
+      - opengl
+      - audio-playback
+      - joystick
+
+layout:
+  $SNAP/game/saves:
+    symlink: $SNAP_DATA/saves
+  $SNAP/game/cache:
+    symlink: $SNAP_DATA/cache
